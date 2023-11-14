@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Aptima';
+  src: url(../fonts/Aptima.ttf);
+}
+@font-face {
+  font-family: 'AptimaItalic';
+  src: url(../fonts/AptimaItalic.ttf);
+}
+@font-face {
+  font-family: 'GaramondPremrPro-Bd';
+  src: url(../fonts/GaramondPremrPro-Bd.otf);
+}
+@font-face {
+  font-family: 'GaramondPremrPro-It';
+  src: url(../fonts/GaramondPremrPro-It.otf);
+}
+@font-face {
+  font-family: 'GaramondPremrPro';
+  src: url(../fonts/GaramondPremrPro.otf);
+}
+
+$font-base: 'GaramondPremrPro', Arial, Helvetica, sans-serif;
+$font-aptima: 'Aptima',$font-base;
+$font-aptima-italic: 'AptimaItalic',$font-base;
+$font-italic: 'GaramondPremrPro-It', $font-base;
+
+$font-family : $font-base;
+
+
