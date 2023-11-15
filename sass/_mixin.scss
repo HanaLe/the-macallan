@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 $tablet :992px;
+$pc :1440px;
 $mobile :640px;
 
 /* MEDIA QUERIES
@@ -13,6 +14,12 @@ $mobile :640px;
 
 @mixin Tablet {
   @media only screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin SMALL-PC {
+  @media only screen and (max-width: $pc) {
     @content;
   }
 }

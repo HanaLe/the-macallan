@@ -239,12 +239,8 @@ main {
   overflow: hidden;
 }
 
-a {
-  transition: 0.3s all ease;
-}
-
 a:hover, a.animate:hover {
-  transform: translateY(5px);
+  animation: press 0.2s 0.1s infinite;
 }
 
 b {
@@ -267,6 +263,11 @@ b {
   font-size: 25px;
   line-height: 1.2;
 }
+@media only screen and (max-width: 1440px) {
+  .vi {
+    font-size: 20px;
+  }
+}
 @media only screen and (max-width: 992px) {
   .vi {
     font-size: 12px;
@@ -275,6 +276,11 @@ b {
 .vi.medium {
   font-size: 32px;
 }
+@media only screen and (max-width: 1440px) {
+  .vi.medium {
+    font-size: 25px;
+  }
+}
 @media only screen and (max-width: 992px) {
   .vi.medium {
     font-size: 20px;
@@ -282,6 +288,11 @@ b {
 }
 .vi.large {
   font-size: 35px;
+}
+@media only screen and (max-width: 1440px) {
+  .vi.large {
+    font-size: 30px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .vi.large {
@@ -294,6 +305,11 @@ b {
   font-size: 21px;
   line-height: 1.2;
 }
+@media only screen and (max-width: 1440px) {
+  .en {
+    font-size: 16px;
+  }
+}
 @media only screen and (max-width: 992px) {
   .en {
     font-size: 12px;
@@ -305,6 +321,11 @@ b {
   font-size: 28px;
   line-height: 1.2;
 }
+@media only screen and (max-width: 1440px) {
+  .vi-aptima {
+    font-size: 18px;
+  }
+}
 @media only screen and (max-width: 992px) {
   .vi-aptima {
     font-size: 13px;
@@ -312,6 +333,11 @@ b {
 }
 .vi-aptima.large {
   font-size: 32px;
+}
+@media only screen and (max-width: 1440px) {
+  .vi-aptima.large {
+    font-size: 24px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .vi-aptima.large {
@@ -323,6 +349,11 @@ b {
   font-family: "AptimaItalic", "GaramondPremrPro", Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 1.2;
+}
+@media only screen and (max-width: 1440px) {
+  .en-aptima {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .en-aptima {
@@ -376,6 +407,11 @@ b {
 }
 .button .en {
   font-size: 20px;
+}
+@media only screen and (max-width: 1440px) {
+  .button .en {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .button .en {
@@ -602,6 +638,17 @@ b {
   }
 }
 
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .section-intro {
   display: flex;
   align-items: center;
