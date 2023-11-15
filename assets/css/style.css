@@ -247,6 +247,21 @@ a:hover, a.animate:hover {
   transform: translateY(5px);
 }
 
+b {
+  font-family: "GaramondPremrPro-Bd", "GaramondPremrPro", Arial, Helvetica, sans-serif;
+}
+
+.line {
+  margin: 40px 0 0;
+  border-bottom: 1px solid rgb(35, 72, 46);
+  width: 100%;
+}
+@media only screen and (max-width: 992px) {
+  .line {
+    margin: 20px 0 0;
+  }
+}
+
 .vi {
   font-family: "GaramondPremrPro", Arial, Helvetica, sans-serif;
   font-size: 25px;
@@ -448,7 +463,7 @@ a:hover, a.animate:hover {
 }
 @media print, (min-width: 993px) {
   .card:nth-of-type(2n) .card-info {
-    padding-left: 8%;
+    padding-left: 4%;
     padding-right: 80px;
     text-align: right;
   }
@@ -461,6 +476,11 @@ a:hover, a.animate:hover {
 .card:nth-of-type(2n) .decor {
   left: auto;
   right: 45%;
+}
+@media print, (min-width: 993px) {
+  .card:nth-of-type(2n+1) .card-info {
+    text-align: left;
+  }
 }
 .card:last-of-type:after {
   height: 50%;
@@ -531,9 +551,6 @@ a:hover, a.animate:hover {
     padding: 10px 10px 20px;
     width: 50%;
   }
-}
-.card p:first-of-type {
-  text-align: right;
 }
 .card p + p {
   margin-top: 20px;
@@ -616,6 +633,9 @@ a:hover, a.animate:hover {
   .section-intro:before {
     background: url(../images/m-m-1.png) no-repeat bottom center/100% auto;
   }
+}
+.section-intro .line {
+  max-width: 58%;
 }
 .section-intro p:not(.text-black) {
   color: rgb(25, 54, 25);

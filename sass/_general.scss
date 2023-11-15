@@ -19,6 +19,17 @@ a{
 a:hover,a.animate:hover{
   transform: translateY(5px);
 }
+b{
+  font-family: $font-bold;
+}
+.line{
+  margin: 40px 0 0;
+  border-bottom: 1px solid rgb(35, 72, 46);
+  width: 100%;
+  @include SP{
+    margin: 20px 0 0;
+  }
+}
 .vi{
   font-family: $font-base;
   font-size: 25px;
@@ -188,7 +199,7 @@ a:hover,a.animate:hover{
     }
     #{$card}-info{
       @include PC{
-        padding-left: 8%;
+        padding-left: 4% ;
         padding-right: 80px;
         text-align: right;
       }
@@ -201,6 +212,13 @@ a:hover,a.animate:hover{
     .decor{
       left: auto;
       right: 45%;
+    }
+  }
+  &:nth-of-type(2n+1){
+    #{$card}-info{
+      @include PC{
+        text-align: left;
+      }
     }
   }
   &:last-of-type{
@@ -263,7 +281,9 @@ a:hover,a.animate:hover{
       width: 50%;
     }
     &:first-of-type{
-      text-align: right;
+      @include SP{
+        // text-align: right;
+      }
     }
   }
   p+p{
