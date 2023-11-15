@@ -1,0 +1,38 @@
+.p-confirm{
+	background: url(../images/bg-confirm-pc.jpg) no-repeat top center / 100% 100%;
+	width: 100vw;
+	height: 100vh;
+	@include SP{
+		background: url(../images/bg-confirm-sp.jpg) no-repeat top center / 100% 100%;
+	}
+}
+.section-confirm{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 30px;
+	&-content{
+		max-width: 35%;
+		text-align: center;
+		margin-top: 150px;
+		@include SP{
+			margin-top: 10vw;
+			max-width: 55%;
+		}
+	}
+	.logo{
+		margin-top: 10vh;
+		@include SP{
+			margin-top: 15vw;
+		}
+	}
+	p+p{
+		margin-top: 20px;
+	}
+	.button-gallery{
+		@include SP{
+			margin-top: 10vw;
+			min-width: 50vw;
+		}
+	}
+}

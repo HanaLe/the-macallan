@@ -26,6 +26,12 @@ a:hover,a.animate:hover{
   @include SP{
     font-size: 12px;
   }
+  &.medium{
+    font-size: 32px;
+    @include SP{
+      font-size: 20px;
+    }
+  }
   &.large{
     font-size: 35px;
     @include SP{
@@ -298,6 +304,7 @@ a:hover,a.animate:hover{
   background-color: rgba(37, 75, 46,0.9);
   box-shadow: 0px 0px 4.2px 0.8px rgba(92, 84, 54, 0.47);
   background-blend-mode: color-dodge;
+  text-align: center;
   @include SP{
     border-radius: 8px;
     margin: 10px auto 0;
